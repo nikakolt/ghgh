@@ -1,0 +1,74 @@
+.mario{
+width: 68px;
+height: 68px;
+display: block;
+position: relative;
+background: url("./img/mario-walk-n-jump-68.png");
+animation: walk 0.9s steps(1) infinite;
+
+}
+
+@keyframes walk{
+    0%{ background-position: 0px top;}
+    25%{ background-position: -68px top;}
+    75% { background-position: -136px top;}
+    100% { background-position: -204px top;}
+}
+
+.mario2{
+width: 68px;
+height: 68px;
+display: block;
+position: relative;
+background: url("./img/mario-walk-n-jump-68.png");
+animation: walk2 2s steps(1) infinite;
+
+}
+
+@keyframes walk2{
+    0%{ background-position: 0px top;}
+    100% { background-position: -408px top;}
+}
+
+.path{
+
+    width: 68px;
+    height: 68px;
+    display: block;
+    position: absolute;
+    top: 200px;
+    animation: path 3s linear infinite;
+}
+
+@keyframes path {
+
+  0% { left: -68px; top: 0px;} 
+   25% { left: 30%; top: 200px;} 
+    50% { left: 50%; top: 150px;}
+     55% { left: 56%; top: 200px;}
+     100% {left: 100%;}
+}
+
+.divt{
+position: relative;
+width: 100%;
+overflow-x: hidden;
+height: 100px;
+
+}
+
+.text{
+    position: absolute;
+    width: 300%;
+    animation: text 6s linear infinite;
+    top: 0;
+    left: 0;
+    font-size: 6vw;
+    word-wrap: nowrap;
+}
+
+@keyframes text{
+0%{ left: -100%; top: 0;}
+100%{ left: 0%; top: 0;}
+
+}
